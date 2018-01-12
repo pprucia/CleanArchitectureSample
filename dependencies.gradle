@@ -1,0 +1,65 @@
+ext.versions = [
+        minSdk          : 27,
+        targetSdk       : 27,
+        compileSdk      : 27,
+
+        appCode         : 1,
+        appName         : "0.0.1",
+
+        gradle          : '3.0.1',
+        kotlin          : '1.2.10',
+        buildTools      : '27.0.3',
+
+        androidSupport  : '27.0.2',
+        butterknife     : '8.8.1',
+        constraintLayout: '1.0.2',
+        dagger          : '2.14.1',
+        lifecycle       : '1.0.0',
+        retrofit        : '2.3.0',
+        room            : '1.0.0',
+        timber          : '4.6.0',
+
+        espresso        : '3.0.1',
+        junit           : '4.12'
+]
+
+ext.deps = [
+        android    : [
+                gradle: "com.android.tools.build:gradle:$versions.gradle"
+        ],
+        butterknife: [
+                core    : "com.jakewharton:butterknife:$versions.butterknife",
+                compiler: "com.jakewharton:butterknife-compiler:$versions.butterknife"
+        ],
+        dagger     : [
+                core    : "com.google.dagger:dagger-android:$versions.dagger",
+                support : "com.google.dagger:dagger-android-support:$versions.dagger",
+                compiler: "com.google.dagger:dagger-android-processor:$versions.dagger"
+        ],
+        kotlin     : [
+                gradlePlugin: "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
+                stdLibJre8  : "org.jetbrains.kotlin:kotlin-stdlib-jre8:$versions.kotlin"
+        ],
+        lifecycle  : [
+                extensions : "android.arch.lifecycle:extensions:$versions.lifecycle",
+                commonJava8: "android.arch.lifecycle:common-java8:$versions.lifecycle"
+        ],
+        retrofit   : "com.squareup.retrofit2:retrofit:$versions.retrofit",
+        room       : [
+                runtime : "android.arch.persistence.room:runtime:$versions.room",
+                compiler: "android.arch.persistence.room:compiler:$versions.room"
+        ],
+        support    : [
+                appcompatV7     : "com.android.support:appcompat-v7:$versions.androidSupport",
+                constraintLayout: "com.android.support.constraint:constraint-layout:$versions.constraintLayout",
+                design          : "com.android.support:design:$versions.androidSupport",
+                recyclerView    : "com.android.support:recyclerview-v7:$versions.androidSupport"
+        ],
+        tests      : [
+                espresso : "com.android.support.test.espresso:espresso-core:$versions.espresso",
+                junit    : "junit:junit:$versions.junit",
+                lifecycle: "android.arch.core:core-testing:$versions.lifecycle",
+                room     : "android.arch.persistence.room:testing:$versions.room"
+        ],
+        timber     : "com.jakewharton.timber:timber:$versions.timber"
+]
