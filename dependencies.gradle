@@ -11,7 +11,6 @@ ext.versions = [
         buildTools      : '27.0.3',
 
         androidSupport  : '27.0.2',
-        butterknife     : '8.8.1',
         constraintLayout: '1.0.2',
         dagger          : '2.14.1',
         lifecycle       : '1.0.0',
@@ -26,10 +25,6 @@ ext.versions = [
 ext.deps = [
         android    : [
                 gradle: "com.android.tools.build:gradle:$versions.gradle"
-        ],
-        butterknife: [
-                core    : "com.jakewharton:butterknife:$versions.butterknife",
-                compiler: "com.jakewharton:butterknife-compiler:$versions.butterknife"
         ],
         dagger     : [
                 core    : "com.google.dagger:dagger-android:$versions.dagger",
