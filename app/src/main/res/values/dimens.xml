@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="navigation_item_image_height">24dp</dimen>
+    <dimen name="navigation_item_image_width">24dp</dimen>
+    <dimen name="navigation_item_viewport_height">24.0</dimen>
+    <dimen name="navigation_item_viewport_width">24.0</dimen>
+</resources>

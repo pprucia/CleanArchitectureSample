@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_contacts"
+        android:icon="@drawable/ic_navigation_contacts"
+        android:title="@string/title_navigation_contacts" />
+
+    <item
+        android:id="@+id/navigation_gallery"
+        android:icon="@drawable/ic_navigation_gallery"
+        android:title="@string/title_navigation_gallery" />
+
+    <item
+        android:id="@+id/navigation_blah"
+        android:icon="@drawable/ic_navigation_blah"
+        android:title="@string/title_navigation_blah" />
+
+</menu>
