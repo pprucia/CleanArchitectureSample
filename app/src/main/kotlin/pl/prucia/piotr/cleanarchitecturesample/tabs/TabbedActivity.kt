@@ -25,7 +25,7 @@ class TabbedActivity : BaseActivity() {
     }
 
     private class SectionsPagerAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(fragmentManager) {
-        private val pagerFragments = listOf(GalleryFragment(), ContactsFragment(), BlahFragment())
+        private val pagerFragments = listOf(ContactsFragment(), GalleryFragment(), BlahFragment())
 
         override fun getItem(position: Int): Fragment {
             return pagerFragments[position]

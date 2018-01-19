@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">Clean Architecture Sample</string>
 
+    <string name="description_contact_photo">Contact photo</string>
+
     <string name="title_activity_tabbed">@string/app_name</string>
 
-    <string name="title_navigation_contacts">Home</string>
+    <string name="title_navigation_contacts">Contacts</string>
     <string name="title_navigation_gallery">Gallery</string>
     <string name="title_navigation_blah">Blah</string>
 </resources>
