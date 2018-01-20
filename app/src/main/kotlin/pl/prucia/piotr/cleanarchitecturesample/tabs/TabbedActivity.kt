@@ -9,7 +9,7 @@ import android.support.v4.view.ViewPager
 import kotlinx.android.synthetic.main.activity_tabbed.*
 import pl.prucia.piotr.cleanarchitecturesample.BaseActivity
 import pl.prucia.piotr.cleanarchitecturesample.R
-import pl.prucia.piotr.cleanarchitecturesample.blah.BlahFragment
+import pl.prucia.piotr.cleanarchitecturesample.map.MapFragment
 import pl.prucia.piotr.cleanarchitecturesample.contacts.ContactsFragment
 import pl.prucia.piotr.cleanarchitecturesample.gallery.GalleryFragment
 
@@ -25,7 +25,7 @@ class TabbedActivity : BaseActivity() {
     }
 
     private class SectionsPagerAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(fragmentManager) {
-        private val pagerFragments = listOf(ContactsFragment(), GalleryFragment(), BlahFragment())
+        private val pagerFragments = listOf(ContactsFragment(), GalleryFragment(), MapFragment())
 
         override fun getItem(position: Int): Fragment {
             return pagerFragments[position]
@@ -54,7 +54,7 @@ class TabbedActivity : BaseActivity() {
                 pager.currentItem = 1
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_blah -> {
+            R.id.navigation_map -> {
                 pager.currentItem = 2
                 return@OnNavigationItemSelectedListener true
             }

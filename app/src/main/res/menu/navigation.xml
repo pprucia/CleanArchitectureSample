@@ -12,8 +12,8 @@
         android:title="@string/title_navigation_gallery" />
 
     <item
-        android:id="@+id/navigation_blah"
-        android:icon="@drawable/ic_navigation_blah"
-        android:title="@string/title_navigation_blah" />
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/ic_navigation_map"
+        android:title="@string/title_navigation_map" />
 
 </menu>
