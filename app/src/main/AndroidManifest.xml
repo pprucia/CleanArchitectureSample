@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".contacts.ContactDetails" />
-
+        <activity android:name=".gallery.FullscreenPhotoActivity" />
         <activity
             android:name=".tabs.TabbedActivity"
             android:label="@string/title_activity_tabbed">
