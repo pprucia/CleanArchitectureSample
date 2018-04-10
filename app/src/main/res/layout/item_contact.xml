@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="@dimen/contact_item_padding">
+    android:padding="@dimen/contact_item_padding"
+    tools:showIn="@layout/fragment_contacts">
 
     <ImageView
         android:id="@+id/contact_photo"
         android:layout_width="@dimen/contact_item_photo_width"
         android:layout_height="@dimen/contact_item_photo_height"
         android:contentDescription="@string/description_contact_photo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:background="@mipmap/ic_launcher" />
+        tools:background="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/contact_name"
@@ -23,12 +24,12 @@
         android:layout_marginStart="@dimen/contact_item_name_margin_start"
         android:lines="1"
         android:textSize="@dimen/contact_item_name_text_size"
+        app:layout_constraintBottom_toTopOf="@id/contact_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toRightOf="@id/contact_photo"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/contact_description"
         app:layout_constraintVertical_chainStyle="packed"
-        tools:text="John Doe" />
+        tools:text="@tools:sample/full_names" />
 
     <TextView
         android:id="@+id/contact_description"
@@ -36,10 +37,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/contact_item_description_margin_top"
         android:textSize="@dimen/contact_item_description_text_size"
-        app:layout_constraintTop_toBottomOf="@id/contact_name"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="@id/contact_name"
         app:layout_constraintRight_toRightOf="@id/contact_name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:text="Red cat design"/>
+        app:layout_constraintTop_toBottomOf="@id/contact_name"
+        tools:text="@tools:sample/cities" />
 
 </android.support.constraint.ConstraintLayout>
