@@ -15,10 +15,9 @@ import pl.prucia.piotr.cleanarchitecturesample.gallery.GalleryFragment
 
 class TabbedActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tabbed)
+    override fun provideLayout() = R.layout.activity_tabbed
 
+    override fun setupLayout(savedInstanceState: Bundle?) {
         pager.adapter = SectionsPagerAdapter(supportFragmentManager)
         pager.addOnPageChangeListener(onPageChangeListener)
         navigation.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
