@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="unsplash_access"><!-- TODO: here goes the key --></string>
+    <string name="unsplash_secret"><!-- TODO: here goes the key --></string>
+</resources>

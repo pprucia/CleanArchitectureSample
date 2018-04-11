@@ -53,6 +53,7 @@ dependencies {
     kapt deps.dagger.compiler
     kapt deps.room.compiler
 
+    implementation deps.support.cardViewV7
     implementation deps.kotlin.stdLibJre8
 
     androidTestImplementation(deps.tests.espresso, {
